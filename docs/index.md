@@ -8,11 +8,11 @@ hero:
   tagline: 快速构建模块化后端.
   actions:
     - theme: brand
-      text: 快速开始
-      link: /markdown-examples
+      text: 快速入门
+      link: /document/quickstart/zh
     - theme: alt
-      text: 参考文档
-      link: /api-examples
+      text: 食谱例子
+      link: /document/examples/zh
 
 features:
   - title: 简单快速
