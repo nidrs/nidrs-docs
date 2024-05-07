@@ -19,66 +19,66 @@ export default defineConfig({
     logo: '/logo.jpg',
     nav: [
       { text: '首页', link: '/' },
-      { text: '开始', link: '/document/quickstart/zh' },
-      { text: '例子', link: '/document/examples/zh' },
-      { text: '生态', link: '/document/eco/zh' },
-      { text: '资源', link: '/document/awesome/zh' },
-      { text: '贡献', link: '/document/contribute/zh' },
+      { text: '开始', link: '/zh/quickstart/readme' },
+      { text: '例子', link: '/zh/examples/readme' },
+      { text: '生态', link: '/zh/eco/readme' },
+      { text: '资源', link: '/zh/awesome/readme' },
+      { text: '贡献', link: '/zh/contribute/readme' },
       { text: '参考', link: 'https://crates.io/crates/nidrs' }
     ],
 
     sidebar: {
-      '/document' :[
+      '/zh' :[
         {
           text: 'Nidrs',
           items: [
             {
               text: '快速入门',
-              link: '/document/quickstart/zh'
+              link: '/zh/quickstart/readme'
             },
             {
               text: '食用指南',
-              link: '/document/guide/zh'
+              link: '/zh/guide/readme'
             },
           ]
         },
         {
           text: '基本概念',
-          link: '/document/concept/zh',
+          link: '/zh/concept/readme',
           items: [
             {
               text: 'Service',
-              link: '/document/concept/service/zh'
+              link: '/zh/concept/service/readme'
             },
             {
               text: 'Controller',
-              link: '/document/concept/controller/zh'
+              link: '/zh/concept/controller/readme'
             },
             {
               text: 'Module',
-              link: '/document/concept/module/zh'
+              link: '/zh/concept/module/readme'
             },
             {
               text: 'Interceptor',
-              link: '/document/concept/interceptor/zh'
+              link: '/zh/concept/interceptor/readme'
             },
             {
               text: 'Meta',
-              link: '/document/concept/meta/zh'
+              link: '/zh/concept/meta/readme'
             },
           ]
         },
         {
           text: '食谱例子',
-          link: '/document/examples/zh',
+          link: '/zh/examples/readme',
           items: [
             {
               text: 'OpenAPI',
-              link: '/document/examples/openapi/zh'
+              link: '/zh/examples/openapi/readme'
             },
             {
               text: 'ORM Diesel',
-              link: '/document/examples/orm-diesel/zh'
+              link: '/zh/examples/orm-diesel/readme'
             },
           ]
         },
@@ -88,17 +88,17 @@ export default defineConfig({
           items: [
             {
               text: '命令工具',
-              link: '/document/eco/zh'
+              link: '/zh/eco/readme'
             },
             {
               text: '相关资源',
-              link: '/document/awesome/zh'
+              link: '/zh/awesome/readme'
             },
           ]
         },
         {
           text: '贡献者读',
-          link: '/document/contribute/zh'
+          link: '/zh/contribute/readme'
         },
         {
           text: '开源协议',
