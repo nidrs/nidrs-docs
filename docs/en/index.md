@@ -6,6 +6,7 @@ hero:
   name: "Nidrs"
   text: "一个 Rust 企业级开发框架."
   tagline: 快速构建模块化后端.
+  image: /logo.jpg
   actions:
     - theme: brand
       text: 快速入门
@@ -31,6 +32,25 @@ features:
     details: OpenAPI 可以让我们非常快速的构建出 Swagger API 文档，并且在这个过程中，我们只需要添加少量的标记即可实现。
   - title: WASM
     details: nidrs 基于 axum 开发，这让我们以 WASM 方式运行变得简单，通过 WASM 我们可以更安全的运行系统。
-    
 ---
 
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #f09819 30%, #edde5d);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #f09819 50%, #edde5d 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+</style>
