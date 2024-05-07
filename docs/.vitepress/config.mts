@@ -6,6 +6,7 @@ import EnConfig from './locales/en/config.mts'
 export default defineConfig({
   title: "Nidrs",
   description: "nidrs docs.",
+  head: [['link', { rel: 'icon', href: '/logo.jpg' }]],
   locales: {
     root: {
       lang: 'zh',
