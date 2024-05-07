@@ -40,9 +40,31 @@ export default defineConfig({
               text: '食用指南',
               link: '/document/guide/zh'
             },
+          ]
+        },
+        {
+          text: '基本概念',
+          link: '/document/concept/zh',
+          items: [
             {
-              text: '基本概念',
-              link: '/document/concept/zh'
+              text: 'Service',
+              link: '/document/concept/service/zh'
+            },
+            {
+              text: 'Controller',
+              link: '/document/concept/controller/zh'
+            },
+            {
+              text: 'Module',
+              link: '/document/concept/module/zh'
+            },
+            {
+              text: 'Interceptor',
+              link: '/document/concept/interceptor/zh'
+            },
+            {
+              text: 'Meta',
+              link: '/document/concept/meta/zh'
             },
           ]
         },
