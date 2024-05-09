@@ -15,7 +15,7 @@ export default defineConfig({
         text: "v0.x",
         items: [
           { text: "next", link: "/next/" },
-          { text: "v0.x", link: "/" },
+          { text: "v0.x (latest)", link: "/" },
         ],
       },
     ],
