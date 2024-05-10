@@ -55,7 +55,7 @@ export default defineConfig({
               link: "/v0.x/guide/module-lib",
             },
             {
-              text: "为什么选择 nidrs",
+              text: "nidrs vs axum",
               link: "/v0.x/guide/why-nidrs",
             },
             {
