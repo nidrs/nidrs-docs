@@ -59,7 +59,7 @@ export default defineConfig({
               link: "/v0.x/guide/why-nidrs",
             },
             {
-              text: "Nidrs 目标里程碑",
+              text: "愿景目标里程碑",
               link: "/v0.x/guide/milestone",
             },
           ],
