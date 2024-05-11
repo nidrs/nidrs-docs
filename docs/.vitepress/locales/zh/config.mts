@@ -72,7 +72,7 @@ export default defineConfig({
           ],
         },
         {
-          text: "基本概念",
+          text: "概念原理",
           link: "/v0.x/concept/readme",
           items: [
             {
