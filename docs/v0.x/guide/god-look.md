@@ -2,6 +2,10 @@
 
 > 关键的宏、关键的配置、简单的例子
 
+<div style="width:100%;display: flex;justify-content: center">
+  <img src="/modules.svg" width="400px" />
+</div>
+
 ## 目录结构
 
 首先我们先从整个框架的目录结构开始讲起：
