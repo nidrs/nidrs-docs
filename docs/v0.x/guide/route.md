@@ -170,7 +170,7 @@ impl UserController {
 }
 ```
 
-我们可以通过 `AppendHeaders` 结构体来设置响应头，这也是从 axum 中导入。
+我们也可以通过 axum 的方式设置响应头。
 
 ## 接口前缀 & 接口版本
 
@@ -218,7 +218,7 @@ impl UserController {
 
 这里的 `#[version("v2")]` 不仅仅支持在方法上定义，也支持在 struct 上定义。
 
-如果我某个接口不想要前缀该怎么弄呢，我们可以通过 `#[meta(disable_default_prefix)]` 来禁用掉某个 struct 或者 方法添加前缀，这里提到的 meta 宏是一个比较重要的概念，后面会深入讲解。
+如果我某个接口不想要前缀该怎么弄呢，我们可以通过 `#[meta(disable_default_prefix)]` (或者 `#[disable_default_prefix]`) 来禁用掉某个 struct 或者 方法添加前缀，这里提到的 meta 宏是一个比较重要的概念，后面会深入讲解。
 
 ## 最后
 
