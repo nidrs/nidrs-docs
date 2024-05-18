@@ -77,7 +77,7 @@ use service::AppService;
     services: [AppService],
     exports: [AppService],
 })]
-#[derive(Clone, Debug, Default)]
+#[derive(Clone, Debug)]
 pub struct AppModule;
 ```
 
@@ -107,7 +107,7 @@ use super::{dto::Status, service::AppService};
 #[meta(role = "admin")]
 #[uses(LogInterceptor)]
 #[controller("/app")]
-#[derive(Debug, Default)]
+#[derive(Debug)]
 pub struct AppController {
     app_service: Inject<AppService>,
 }
@@ -168,7 +168,7 @@ use nidrs::Inject;
 use nidrs_macro::injectable;
 
 #[injectable()]
-#[derive(Clone, Debug, Default)]
+#[derive(Clone, Debug)]
 pub struct AppService {
     user_service: Inject<UserService>,
 }
