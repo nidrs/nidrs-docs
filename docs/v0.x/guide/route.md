@@ -156,7 +156,7 @@ impl UserController {
         &self,
         header: HeaderMap,
         Query(q): Query<HashMap<String, String>>,
-    ) -> AppResult<Vec<User>> {
+    ) -> AppResult<(AppendHeaders<[(String, String); 2]>, Vec<User>>)> {
         println!("Query {:?}", q);
 
         let rid = header.get("X-RID");
@@ -165,12 +165,15 @@ impl UserController {
             println!("rid: {:?}", rid);
         }
 
-        AppResult::Ok(self.user_service.all().await?).header("X-Test", "test")
+        AppResult::Ok((
+            AppendHeaders([("X-Custom-Header".to_string(), "hello".to_string()), ("X-Custom-Header".to_string(), "world".to_string())]),
+            self.user_service.all().await?
+        ))
     }
 }
 ```
 
-我们也可以通过 axum 的方式设置响应头。
+上面是一个简单的方式设置的响应头，也可以直接在拦截器中进行设置。
 
 ## 接口前缀 & 接口版本
 
