@@ -197,7 +197,8 @@ fn main() {
     let app = app.default_prefix("/api/{version}");
     let app = app.default_version("v1");
 
-    app.listen(3000);
+    app.listen(3000).block();
+;
 }
 
 ```
